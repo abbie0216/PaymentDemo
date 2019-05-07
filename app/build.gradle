@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+    defaultConfig {
+        applicationId "com.idhub.shop"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "0.0.1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+        debug {
+            minifyEnabled false
+        }
+    }
+    lintOptions {
+        warning 'InvalidPackage'
+        disable 'GoogleAppIndexingWarning'
+        disable 'CheckResult'
+    }
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    applicationVariants.all { variant ->
+        if (variant.buildType.name == 'release') {
+            variant.outputs.all { output ->
+                outputFileName = "IDHubPayment_v${versionName}.apk"
+            }
+        }
+    }
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+}
+
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0-alpha03'
+    implementation 'androidx.core:core-ktx:1.1.0-alpha05'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
+    // Testing
+    testImplementation 'junit:junit:4.12'
+    testImplementation 'io.mockk:mockk:1.9.2.kotlin12'
+    androidTestImplementation 'io.mockk:mockk-android:1.9.2.kotlin12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.0'
+    androidTestImplementation 'androidx.test:rules:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.1'
+    // Zxing
+    implementation 'com.journeyapps:zxing-android-embedded:3.6.0'
+    // Permission
+    implementation 'org.permissionsdispatcher:permissionsdispatcher:4.3.0'
+    kapt "org.permissionsdispatcher:permissionsdispatcher-processor:4.3.0"
+    // RxJava
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    // Biometric support
+    implementation 'me.aflak.libraries:fingerprint:2.5.3'
+    // Retrofit2
+    implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+    implementation 'com.squareup.retrofit2:adapter-rxjava2:2.5.0'
+    implementation 'com.squareup.retrofit2:converter-gson:2.5.0'
+    // OkHttp3
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.11.0'
+    // Gson
+    implementation 'com.google.code.gson:gson:2.8.5'
+    // Custom View
+    implementation 'com.afollestad.material-dialogs:core:2.0.1'
+    implementation 'me.grantland:autofittextview:0.2.1'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.baoyz.pullrefreshlayout:library:1.2.0'
+    // Debug tool
+    implementation 'com.facebook.stetho:stetho:1.5.0'
+    // Wallet
+    implementation 'org.web3j:core:4.1.0-android'
+}

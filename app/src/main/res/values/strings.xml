@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">IDHub Payment</string>
+
+    <string name="top_bar_title_home">Home</string>
+    <string name="top_bar_title_sign_up">Sign Up</string>
+    <string name="top_bar_title_order">Order</string>
+    <string name="top_bar_title_member">Member</string>
+    <string name="top_bar_title_record">Log</string>
+
+    <string name="dlg_title_success">Success</string>
+    <string name="dlg_title_fail">Fail</string>
+
+    <string name="dlg_btn_confirm">Confirm</string>
+    <string name="dlg_btn_cancel">Cancel</string>
+
+    <string name="dlg_msg_scan_syntax_fail">Wrong QR code format!</string>
+    <string name="dlg_msg_unexpected_fail">Unexpected error!</string>
+
+    <string name="dlg_msg_update_member_info_done">Member info is updated!</string>
+
+    <string name="toast_copied">Copied!</string>
+
+    <string name="use_manual_password_to_sign_in">Use manual password to sign in</string>
+    <string name="use_fingerprint_lock_to_sign_in">Use fingerprint lock to sign in</string>
+    <string name="use_manual_password">Use Manual Password</string>
+    <string name="use_fingerprint_lock">Use Fingerprint Lock</string>
+    <string name="set_fingerprint_lock">Set Fingerprint Lock</string>
+
+</resources>

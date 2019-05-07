@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/green_white_e9f2f0">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="AKB48 CD"
+            android:textColor="@color/blue_dark_216188"
+            android:textSize="22dp" />
+
+        <TextView
+            android:id="@+id/tvProductPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Price: 99"
+            android:textColor="@color/blue_dark_216188"
+            android:textSize="16dp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="25dp"
+            app:boxStrokeColor="@color/blue_light_72afd3"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@color/pink_light_e454c3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRecipientName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Recipient's Name *"
+                android:inputType="text"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            app:boxStrokeColor="@color/blue_light_72afd3"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@color/pink_light_e454c3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRecipientMobile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Recipient's Mobile *"
+                android:inputType="phone"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="25dp"
+            app:boxStrokeColor="@color/blue_light_72afd3"
+            app:errorEnabled="true"
+            app:errorTextAppearance="@color/pink_light_e454c3">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etRecipientAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Recipient's Address *"
+                android:inputType="text"
+                android:lines="1" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/btnPay"
+            android:layout_width="@dimen/round_rec_btn_width"
+            android:layout_height="@dimen/round_rec_btn_height"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="40dp"
+            android:background="@drawable/sel_btn_round_rec"
+            android:elevation="5dp"
+            android:gravity="center"
+            android:text="Pay"
+            android:textColor="@color/sel_btn_round_rec_txt"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+</ScrollView>

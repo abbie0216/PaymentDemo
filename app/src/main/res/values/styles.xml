@@ -1,0 +1,41 @@
+<resources xmlns:ns1="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/green_light_2fd0a4</item>
+        <item name="colorPrimaryDark">@color/green_light_25a381</item>
+        <item name="android:navigationBarColor">@color/green_light_25a381</item>
+        <item name="colorControlActivated">@color/blue_light_379ddb</item>
+        <item name="colorControlNormal">@color/blue_dark_216188</item>
+    </style>
+
+    <style name="MainTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bg_main</item>
+    </style>
+
+    <style name="SplashTheme" parent="AppTheme">
+        <item name="android:windowBackground">@drawable/bg_splash</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="TextInputStyle" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="android:textColor">@color/blue_dark_216188</item>
+    </style>
+
+    <style name="DialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert" ns1:ignore="PrivateResource">
+        <item name="android:windowMinWidthMajor">100%</item>
+        <item name="android:windowMinWidthMinor">100%</item>
+
+        <item name="android:actionModeBackground">@color/primary_material_dark</item>
+        <item name="android:actionModeCloseDrawable">@drawable/md_nav_back</item>
+
+        <item name="android:windowAnimationStyle">@style/MD_WindowAnimation</item>
+        <item name="android:backgroundDimEnabled">true</item>
+
+        <item name="md_divider_color">@color/md_divider_light_theme</item>
+        <item name="md_item_selector">@drawable/md_item_selector</item>
+        <item name="md_button_selector">@drawable/md_btn_selector</item>
+    </style>
+</resources>

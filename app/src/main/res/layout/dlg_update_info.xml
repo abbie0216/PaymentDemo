@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:background="@color/green_white_e9f2f0"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Title"
+        android:textColor="@color/green_dark_1e7a61"
+        android:textSize="22dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Please input new value."
+        android:textColor="@color/green_light_25a381"
+        android:textSize="16dp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/etInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:boxStrokeColor="@color/blue_light_72afd3"
+        app:errorEnabled="true"
+        app:errorTextAppearance="@color/pink_light_e454c3">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:imeOptions="actionDone" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/btnCancel"
+        android:layout_width="@dimen/round_rec_btn_width"
+        android:layout_height="@dimen/round_rec_btn_height"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/sel_btn_round_rec"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="Cancel"
+        android:textColor="@color/sel_btn_round_rec_txt"
+        android:textSize="16dp" />
+
+    <TextView
+        android:id="@+id/btnUpdate"
+        android:layout_width="@dimen/round_rec_btn_width"
+        android:layout_height="@dimen/round_rec_btn_height"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/sel_btn_round_rec"
+        android:elevation="5dp"
+        android:gravity="center"
+        android:text="Update"
+        android:textColor="@color/sel_btn_round_rec_txt"
+        android:textSize="16dp" />
+
+</LinearLayout>

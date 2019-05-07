@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="green_white_e9f2f0">#e9f2f0</color>
+    <color name="green_light_2fd0a4">#2fd0a4</color>
+    <color name="green_light_25a381">#25a381</color>
+    <color name="green_light_25a381_alpha_50">#5025a381</color>
+    <color name="green_dark_1e7a61">#1e7a61</color>
+
+    <color name="blue_white_e5f0f6_alpha_50">#50e5f0f6</color>
+    <color name="blue_white_e5f0f6">#e5f0f6</color>
+    <color name="blue_light_72afd3">#72afd3</color>
+    <color name="blue_light_379ddb">#379ddb</color>
+    <color name="blue_dark_216188">#216188</color>
+
+    <color name="pink_light_d372bd">#d372bd</color>
+    <color name="pink_light_e454c3">#e454c3</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="white">#ffffff</color>
+    <color name="gray_light_e0e0e0">#e0e0e0</color>
+    <color name="gray_light_9e9e9e">#9e9e9e</color>
+    <color name="gray_dark_626262">#626262</color>
+    <color name="gray_dark_424242">#424242</color>
+
+</resources>
